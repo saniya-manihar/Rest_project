@@ -1,0 +1,71 @@
+/* Container styling */
+.container {
+    max-width: 600px; /* Max width for the form */
+    margin: 20px auto; /* Center the form */
+    padding: 20px; /* Padding around the form */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Form heading styling */
+.form-heading {
+    text-align: center; /* Centered text */
+    color: #C72C41; /* Dark red color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+/* Label styling */
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below labels */
+    font-weight: bold; /* Bold labels */
+}
+
+/* Input and textarea styling */
+.form-input, .form-textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+}
+
+/* Textarea specific styling */
+.form-textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Button styling */
+.btn {
+    background-color: #C72C41; /* Dark red background */
+    color: white; /* White text color */
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 20px; /* Padding for the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    display: inline-block; /* Inline block for proper alignment */
+    align-items: center;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #A6202A; /* Medium dark red on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Button focus effect */
+.btn:focus {
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 0 3px rgba(199, 44, 65, 0.5); /* Shadow effect */
+}

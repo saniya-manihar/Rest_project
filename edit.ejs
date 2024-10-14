@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Details</title>
+    <link rel="stylesheet" href="/updated.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="post-container">
+        <h2 class="post-heading">Update the post</h2>
+        <div class="post-info">
+            <p><span class="label">User ID:</span> <%= post.id %></p>
+            <p><span class="label">Username:</span> <%= post.username %></p>
+        </div>
+
+        <form method="post" action="/posts/<%= post.id %>?_method=PATCH" class="post-form">
+            <textarea name="content" id="content" class="textarea-input" cols="30" rows="10"><%= post.content %></textarea>
+            <button class="btn">Update</button>
+        </form>
+        <a  class="btn" href="http://localhost:8080/posts">Back to Post</a>
+
+    </div>
+</body>
+</html>

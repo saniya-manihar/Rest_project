@@ -1,0 +1,95 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f8; /* Light background */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Main container for the page */
+.container {
+    width: 60%;
+    max-width: 1000px;
+    background-color: white; /* White background for container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Styling for the heading */
+.heading {
+    font-size: 26px;
+    text-align: left;
+    color: #C72C41; /* Dark red color for heading */
+    margin-bottom: 30px;
+    font-weight: bold;
+    border-bottom: 2px solid #EAB8C8; /* Light red border */
+    padding-bottom: 10px;
+}
+
+/* Main post container */
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Each post section */
+.post {
+    padding: 20px;
+    background-color: #FFF5F5; /* Very light red background for posts */
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #EAB8C8; /* Light red border for posts */
+}
+
+/* Username styling */
+.username {
+    font-size: 18px;
+    font-weight: bold;
+    color: #A6202A; /* Medium dark red for username */
+    margin-bottom: 10px;
+}
+
+/* Content styling */
+.content {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444; /* Dark gray for content */
+}
+
+/* Add spacing between posts */
+.main .post:not(:first-child) {
+    margin-top: 20px;
+}
+/* Button styling */
+.btn {
+    background-color: #C72C41; /* Dark red background */
+    color: white; /* White text color */
+    font-size: 16px;
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    display: inline-block; /* Inline block for proper alignment */
+    margin-bottom: 20px; /* Space below the button */
+    text-decoration: none;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #A6202A; /* Medium dark red on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Button focus effect */
+.btn:focus {
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 0 3px rgba(199, 44, 65, 0.5); /* Shadow effect */
+}
+

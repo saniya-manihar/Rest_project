@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Details</title>
+    <link rel="stylesheet" href="/show.css" />
+    <!-- Link to your CSS file -->
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Post Details</h1>
+      <h2 class="post-id">Post ID: <%= post.id %></h2>
+      <p class="username">Username: <span><%= post.username %></span></p>
+      <textarea
+        class="content-area"
+        name="content"
+        id="content"
+        cols="30"
+        rows="10"
+      >
+<%= post.content %></textarea
+      >
+      <a  class="btn" href="http://localhost:8080/posts">Back</a>
+
+    </div>
+  </body>
+</html>
